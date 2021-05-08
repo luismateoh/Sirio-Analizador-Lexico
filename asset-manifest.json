@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/sirio/static/js/main.4e04f55c.chunk.js",
+    "main.js.map": "/sirio/static/js/main.4e04f55c.chunk.js.map",
+    "runtime-main.js": "/sirio/static/js/runtime-main.373892ea.js",
+    "runtime-main.js.map": "/sirio/static/js/runtime-main.373892ea.js.map",
+    "static/css/2.7785af68.chunk.css": "/sirio/static/css/2.7785af68.chunk.css",
+    "static/js/2.be0a1d7f.chunk.js": "/sirio/static/js/2.be0a1d7f.chunk.js",
+    "static/js/2.be0a1d7f.chunk.js.map": "/sirio/static/js/2.be0a1d7f.chunk.js.map",
+    "index.html": "/sirio/index.html",
+    "static/css/2.7785af68.chunk.css.map": "/sirio/static/css/2.7785af68.chunk.css.map",
+    "static/js/2.be0a1d7f.chunk.js.LICENSE.txt": "/sirio/static/js/2.be0a1d7f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.373892ea.js",
+    "static/css/2.7785af68.chunk.css",
+    "static/js/2.be0a1d7f.chunk.js",
+    "static/js/main.4e04f55c.chunk.js"
+  ]
+}
