@@ -31,6 +31,8 @@ export default function findConstNum(number) {
                 break;
             default:
                 symbolo = "x"
+                estado = 9
+                aceptacion = 0
         }
 
         switch (estado) {
@@ -38,163 +40,193 @@ export default function findConstNum(number) {
                 switch (symbolo) {
                     case "d":
                         estado = 2
+                        aceptacion = 1
                         break;
                     case ".":
                         estado = 8
+                        aceptacion = 0
                         break;
                     case "E":
                         estado = 9
+                        aceptacion = 0
                         break;
                     case "s":
                         estado = 1
+                        aceptacion = 0
                         break;
                     default:
                 }
-                aceptacion = 0
+
                 break;
             case 1:
                 switch (symbolo) {
                     case "d":
                         estado = 2
+                        aceptacion = 1
                         break;
                     case ".":
                         estado = 8
+                        aceptacion = 0
                         break;
                     case "E":
                         estado = 9
+                        aceptacion = 0
                         break;
                     case "s":
                         estado = 9
+                        aceptacion = 0
                         break;
                     default:
                 }
-                aceptacion = 0
+
                 break;
             case 2:
                 switch (symbolo) {
                     case "d":
                         estado = 2
+                        aceptacion = 1
                         break;
                     case ".":
                         estado = 34
+                        aceptacion = 1
                         break;
                     case "E":
                         estado = 5
+                        aceptacion = 0
                         break;
                     case "s":
                         estado = 9
+                        aceptacion = 0
                         break;
                     default:
                 }
-                aceptacion = 1
                 break;
             case 34:
                 switch (symbolo) {
                     case "d":
                         estado = 34
+                        aceptacion = 1
                         break;
                     case ".":
                         estado = 9
+                        aceptacion = 0
                         break;
                     case "E":
                         estado = 5
+                        aceptacion = 0
                         break;
                     case "s":
                         estado = 9
+                        aceptacion = 0
                         break;
                     default:
                 }
-                aceptacion = 1
                 break;
             case 5:
                 switch (symbolo) {
                     case "d":
                         estado = 7
+                        aceptacion = 1
                         break;
                     case ".":
                         estado = 9
+                        aceptacion = 0
                         break;
                     case "E":
                         estado = 9
+                        aceptacion = 0
                         break;
                     case "s":
                         estado = 6
+                        aceptacion = 0
                         break;
                     default:
                 }
-                aceptacion = 0
                 break;
             case 6:
                 switch (symbolo) {
                     case "d":
                         estado = 7
+                        aceptacion = 1
                         break;
                     case ".":
                         estado = 9
+                        aceptacion = 0
                         break;
                     case "E":
                         estado = 9
+                        aceptacion = 0
                         break;
                     case "s":
                         estado = 9
+                        aceptacion = 0
                         break;
                     default:
                 }
-                aceptacion = 0
                 break;
             case 7:
                 switch (symbolo) {
                     case "d":
                         estado = 7
+                        aceptacion = 1
                         break;
                     case ".":
                         estado = 9
+                        aceptacion = 0
                         break;
                     case "E":
                         estado = 9
+                        aceptacion = 0
                         break;
                     case "s":
                         estado = 9
+                        aceptacion = 0
                         break;
                     default:
                 }
-                aceptacion = 1
                 break;
             case 8:
                 switch (symbolo) {
                     case "d":
                         estado = 34
+                        aceptacion = 1
                         break;
                     case ".":
                         estado = 9
+                        aceptacion = 0
                         break;
                     case "E":
                         estado = 9
+                        aceptacion = 0
                         break;
                     case "s":
                         estado = 9
+                        aceptacion = 0
                         break;
                     default:
                 }
-                aceptacion = 0
+
                 break;
             case 9:
                 switch (symbolo) {
                     case "d":
                         estado = 9
+                        aceptacion = 0
                         break;
                     case ".":
                         estado = 9
+                        aceptacion = 0
                         break;
                     case "E":
                         estado = 9
+                        aceptacion = 0
                         break;
                     case "s":
                         estado = 9
+                        aceptacion = 0
                         break;
                     default:
                 }
-                aceptacion = 0
                 break;
             default:
         }
