@@ -1,7 +1,7 @@
-export default function findConstNum(number) {
+export default function isNumConst(word) {
     let estado = 0
-    let aceptacion = 0
-    let word = number.split("");
+    let aceptacion
+    word = word.split("");
     word.forEach(automaton);
 
     function automaton(value, index, array) {
@@ -22,17 +22,17 @@ export default function findConstNum(number) {
             case ".":
                 symbolo = "."
                 break;
+            case"e":
             case "E":
                 symbolo = "E"
                 break;
-            case "+":
             case "-":
                 symbolo = "s"
                 break;
             default:
                 symbolo = "x"
                 estado = 9
-                aceptacion = 0
+                aceptacion = false
         }
 
         switch (estado) {
@@ -40,19 +40,19 @@ export default function findConstNum(number) {
                 switch (symbolo) {
                     case "d":
                         estado = 2
-                        aceptacion = 1
+                        aceptacion = true
                         break;
                     case ".":
                         estado = 8
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "E":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "s":
                         estado = 1
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     default:
                 }
@@ -62,19 +62,19 @@ export default function findConstNum(number) {
                 switch (symbolo) {
                     case "d":
                         estado = 2
-                        aceptacion = 1
+                        aceptacion = true
                         break;
                     case ".":
                         estado = 8
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "E":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "s":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     default:
                 }
@@ -84,19 +84,19 @@ export default function findConstNum(number) {
                 switch (symbolo) {
                     case "d":
                         estado = 2
-                        aceptacion = 1
+                        aceptacion = true
                         break;
                     case ".":
                         estado = 34
-                        aceptacion = 1
+                        aceptacion = true
                         break;
                     case "E":
                         estado = 5
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "s":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     default:
                 }
@@ -105,19 +105,19 @@ export default function findConstNum(number) {
                 switch (symbolo) {
                     case "d":
                         estado = 34
-                        aceptacion = 1
+                        aceptacion = true
                         break;
                     case ".":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "E":
                         estado = 5
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "s":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     default:
                 }
@@ -126,19 +126,19 @@ export default function findConstNum(number) {
                 switch (symbolo) {
                     case "d":
                         estado = 7
-                        aceptacion = 1
+                        aceptacion = true
                         break;
                     case ".":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "E":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "s":
                         estado = 6
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     default:
                 }
@@ -147,19 +147,19 @@ export default function findConstNum(number) {
                 switch (symbolo) {
                     case "d":
                         estado = 7
-                        aceptacion = 1
+                        aceptacion = true
                         break;
                     case ".":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "E":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "s":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     default:
                 }
@@ -168,19 +168,19 @@ export default function findConstNum(number) {
                 switch (symbolo) {
                     case "d":
                         estado = 7
-                        aceptacion = 1
+                        aceptacion = true
                         break;
                     case ".":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "E":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "s":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     default:
                 }
@@ -189,19 +189,19 @@ export default function findConstNum(number) {
                 switch (symbolo) {
                     case "d":
                         estado = 34
-                        aceptacion = 1
+                        aceptacion = true
                         break;
                     case ".":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "E":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "s":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     default:
                 }
@@ -211,19 +211,19 @@ export default function findConstNum(number) {
                 switch (symbolo) {
                     case "d":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case ".":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "E":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     case "s":
                         estado = 9
-                        aceptacion = 0
+                        aceptacion = false
                         break;
                     default:
                 }
@@ -234,5 +234,3 @@ export default function findConstNum(number) {
 
     return aceptacion;
 }
-
-

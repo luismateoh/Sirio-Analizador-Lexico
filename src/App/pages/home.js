@@ -13,10 +13,10 @@ function Home({ onSelect, activeKey, ...props }) {
     const containerStyle = {
         height: "100%",
         maxWidth: "100%",
-        display: "flex",
+        display:   "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "25px"
+        padding: "5%"
     };
 
     return (
