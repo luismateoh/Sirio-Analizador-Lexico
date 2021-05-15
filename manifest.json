@@ -1,6 +1,6 @@
 {
   "short_name": "Sirio App",
-  "name": "Create React App Sample",
+  "name": "Analizador lexico",
   "icons": [
     {
       "src": "favicon.ico",
