@@ -36,13 +36,13 @@ function CardResult({tokens, onSelect, activeKey, ...props}) {
             tag = <Tag color="orange">Cadena de texto</Tag>
         }
         if (0 === key.localeCompare("Palabra reservada")) {
-            tag = <Tag color="blue">Palabra reservadas</Tag>
+            tag = <Tag color="blue">Palabra reservada</Tag>
         }
         if (0 === key.localeCompare("Identificador")) {
             tag = <Tag color="green">Identificador</Tag>
         }
         if (0 === key.localeCompare("Constante Numerica")) {
-            tag = <Tag color="violet">Constante Numerica</Tag>
+            tag = <Tag color="violet">Constante Numérica</Tag>
         }
         if (0 === key.localeCompare("Operador")) {
             tag = <Tag color="cyan">Operador</Tag>
