@@ -1,7 +1,8 @@
 import {
     Panel,
     List,
-    Tag, FlexboxGrid
+    Tag,
+    FlexboxGrid
 } from 'rsuite';
 
 
