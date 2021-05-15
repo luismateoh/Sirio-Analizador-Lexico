@@ -1,14 +1,32 @@
 import {
     Panel,
     List,
-    Tag
+    Tag, FlexboxGrid
 } from 'rsuite';
+
 
 function CardResult({tokens, onSelect, activeKey, ...props}) {
     //css
     const panelStyle = {
         paddingTop: "5%"
     }
+
+    const styleCenter = {
+        display: 'flex',
+        weight: "20px"
+    };
+
+    const dataStyle = {
+        fontSize: '1.2em',
+        fontWeight: 500,
+        justifyContent: 'left',
+    };
+    const numberStyle = {
+        fontSize: '1.2em',
+        fontWeight: 500,
+        textAlign:"right",
+        paddingLeft:"1.2em"
+    };
 
     function tags(key) {
         let tag = <Tag>No encontrado</Tag>
@@ -41,8 +59,25 @@ function CardResult({tokens, onSelect, activeKey, ...props}) {
                 <List size="sm" hover>
                     {tokens.map((item, index) => (
                         <List.Item key={item['key']} index={index}>
-                            {tags(item['key'])} &nbsp;&nbsp;&nbsp; {item['value']}
+                            <FlexboxGrid justify={"left"}>
+                                <FlexboxGrid.Item colspan={2} style={styleCenter}>
+                                    <div style={numberStyle}>
+                                        {index+1}.
+                                    </div>
+                                </FlexboxGrid.Item>
+                                <FlexboxGrid.Item colspan={4} style={styleCenter}>
+                                    <div style={{textAlign: 'right'}}>
+                                        <div>{tags(item['key'])}</div>
+                                    </div>
+                                </FlexboxGrid.Item>
+                                <FlexboxGrid.Item colspan={9} style={styleCenter}>
+                                    <div style={{textAlign: 'left'}}>
+                                        <div style={dataStyle}>{item['value']}</div>
+                                    </div>
+                                </FlexboxGrid.Item>
+                            </FlexboxGrid>
                         </List.Item>
+
                     ))}
                 </List>
             </Panel>

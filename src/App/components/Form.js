@@ -12,6 +12,7 @@ import {
     Panel
 } from 'rsuite';
 
+
 const panelStyle = {
     /* Extra small devices (phones, 600px and down) */
     width:"60rem"
@@ -23,8 +24,8 @@ function FormSirio({onSelect, activeKey, ...props}) {
     const [textArea, setTextArea] = useState("void main() {\n  print('Hello, World!');\n}");
     function showCard() {
         if (0 !== textArea.trim().localeCompare("")) {
-
             let tokens = []
+            setCard()
             tokens = automaton(textArea.trim())
             setCard(
                 <CardResult

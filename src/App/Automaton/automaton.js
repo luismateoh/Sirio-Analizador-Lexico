@@ -35,7 +35,7 @@ export default function automaton2(text) {
                 expr = expr.replaceAll(/'/g, " ' ")
 
                 //se aislan los delimitadores o separadores
-                const separatorsList = ["\(", "\)", "\[", "\]", "\{", "\}", ";", ",", ":", "\.{3}"]
+                const separatorsList = ["\(", "\)", "\[", "\]", "\{", "\}", ";", ",", ":"]
                 separatorsList.forEach(function (value) {
                     let regex = new RegExp("\\".concat(value), "g")
                     expr = expr.replaceAll(regex, " ".concat(value, " "))
@@ -52,7 +52,7 @@ export default function automaton2(text) {
                 expr = expr.replaceAll(/\d \. \d/g, ".")
 
                 //Se reagrupan los operadores compuestos triples
-                const tripleOperatorsList = ["\<\<\=", "\>\>\=", "\~\/\=]"]
+                const tripleOperatorsList = ["\<\<\=", "\>\>\=", "\~\/\=]","..."]
                 tripleOperatorsList.forEach(function (value) {
                     let regex = new RegExp("\\".concat(value.charAt(0), "\\s\\s", "\\", value.charAt(1), "\\s\\s", "\\", value.charAt(2)), "g")
                     expr = expr.replaceAll(regex, " ".concat(value.charAt(0), value.charAt(1), value.charAt(2), " "))
