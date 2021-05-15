@@ -1,31 +1,6 @@
 export default function isSeparator(word) {
-    let aceptacion = false
-    if
-    (/\(/.test(word)) {
-        aceptacion = true
-    }
-    if (/\)/.test(word)) {
-        aceptacion = true
-    }
-    if (/\[/.test(word)) {
-        aceptacion = true
-    }
-    if (/]/.test(word)) {
-        aceptacion = true
-    }
-    if (/\{/.test(word)) {
-        aceptacion = true
-    }
-    if (/}/.test(word)) {
-        aceptacion = true
-    }
-    if (/;/.test(word)) {
-        aceptacion = true
-    }
-    if (/,/.test(word)) {
-        aceptacion = true
-    }
-
-    return aceptacion;
-
+    let acceptation
+    const regex = /(?:\[|]|\(|\)|{|}|,|;|:|\.{3})/g
+    acceptation = regex.test(word.trim())
+    return acceptation;
 }

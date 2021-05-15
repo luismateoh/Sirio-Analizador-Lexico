@@ -1,11 +1,11 @@
 export default function isNumConst(word) {
-    let estado = 0
-    let aceptacion
+    let estate = 0
+    let acceptation
     word = word.split("");
     word.forEach(automaton);
 
     function automaton(value, index, array) {
-        let symbolo;
+        let symbol;
         switch (value) {
             case "0":
             case "1":
@@ -17,213 +17,213 @@ export default function isNumConst(word) {
             case "7":
             case "8":
             case "9":
-                symbolo = "d"
+                symbol = "d"
                 break;
             case ".":
-                symbolo = "."
+                symbol = "."
                 break;
             case"e":
             case "E":
-                symbolo = "E"
+                symbol = "E"
                 break;
             case "-":
-                symbolo = "s"
+                symbol = "s"
                 break;
             default:
-                symbolo = "x"
-                estado = 9
-                aceptacion = false
+                symbol = "x"
+                estate = 9
+                acceptation = false
         }
 
-        switch (estado) {
+        switch (estate) {
             case 0:
-                switch (symbolo) {
+                switch (symbol) {
                     case "d":
-                        estado = 2
-                        aceptacion = true
+                        estate = 2
+                        acceptation = true
                         break;
                     case ".":
-                        estado = 8
-                        aceptacion = false
+                        estate = 8
+                        acceptation = false
                         break;
                     case "E":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     case "s":
-                        estado = 1
-                        aceptacion = false
+                        estate = 1
+                        acceptation = false
                         break;
                     default:
                 }
 
                 break;
             case 1:
-                switch (symbolo) {
+                switch (symbol) {
                     case "d":
-                        estado = 2
-                        aceptacion = true
+                        estate = 2
+                        acceptation = true
                         break;
                     case ".":
-                        estado = 8
-                        aceptacion = false
+                        estate = 8
+                        acceptation = false
                         break;
                     case "E":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     case "s":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     default:
                 }
 
                 break;
             case 2:
-                switch (symbolo) {
+                switch (symbol) {
                     case "d":
-                        estado = 2
-                        aceptacion = true
+                        estate = 2
+                        acceptation = true
                         break;
                     case ".":
-                        estado = 34
-                        aceptacion = true
+                        estate = 34
+                        acceptation = true
                         break;
                     case "E":
-                        estado = 5
-                        aceptacion = false
+                        estate = 5
+                        acceptation = false
                         break;
                     case "s":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     default:
                 }
                 break;
             case 34:
-                switch (symbolo) {
+                switch (symbol) {
                     case "d":
-                        estado = 34
-                        aceptacion = true
+                        estate = 34
+                        acceptation = true
                         break;
                     case ".":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     case "E":
-                        estado = 5
-                        aceptacion = false
+                        estate = 5
+                        acceptation = false
                         break;
                     case "s":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     default:
                 }
                 break;
             case 5:
-                switch (symbolo) {
+                switch (symbol) {
                     case "d":
-                        estado = 7
-                        aceptacion = true
+                        estate = 7
+                        acceptation = true
                         break;
                     case ".":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     case "E":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     case "s":
-                        estado = 6
-                        aceptacion = false
+                        estate = 6
+                        acceptation = false
                         break;
                     default:
                 }
                 break;
             case 6:
-                switch (symbolo) {
+                switch (symbol) {
                     case "d":
-                        estado = 7
-                        aceptacion = true
+                        estate = 7
+                        acceptation = true
                         break;
                     case ".":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     case "E":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     case "s":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     default:
                 }
                 break;
             case 7:
-                switch (symbolo) {
+                switch (symbol) {
                     case "d":
-                        estado = 7
-                        aceptacion = true
+                        estate = 7
+                        acceptation = true
                         break;
                     case ".":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     case "E":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     case "s":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     default:
                 }
                 break;
             case 8:
-                switch (symbolo) {
+                switch (symbol) {
                     case "d":
-                        estado = 34
-                        aceptacion = true
+                        estate = 34
+                        acceptation = true
                         break;
                     case ".":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     case "E":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     case "s":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     default:
                 }
 
                 break;
             case 9:
-                switch (symbolo) {
+                switch (symbol) {
                     case "d":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     case ".":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     case "E":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     case "s":
-                        estado = 9
-                        aceptacion = false
+                        estate = 9
+                        acceptation = false
                         break;
                     default:
                 }
@@ -232,5 +232,5 @@ export default function isNumConst(word) {
         }
     }
 
-    return aceptacion;
+    return acceptation;
 }

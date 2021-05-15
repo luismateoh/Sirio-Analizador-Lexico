@@ -1,6 +1,6 @@
 export default function isCharConst(word) {
-    let aceptacion
-    let regex = /(^"[\w\s]+"$)|(^'[\w\s]+'$)/
-    aceptacion = regex.test(word)
-    return aceptacion;
+    let acceptation
+    const regex = /(["'])((?:(?=(?:\\)*)\\.|.)*?)\1/gm
+    acceptation = regex.test(word.trim())
+    return acceptation;
 }
