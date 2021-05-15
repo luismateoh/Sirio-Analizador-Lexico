@@ -49,7 +49,7 @@ export default function automaton2(text) {
                 })
 
                 //Se reagrupa el "." si esta entre numeros
-                expr = expr.replaceAll(/\d \. \d/g, ".")
+                expr = expr.replaceAll(/(?<=\d)( \. )(?=\d)/g, ".")
 
                 //Se reagrupan los operadores compuestos triples
                 const tripleOperatorsList = ["\<\<\=", "\>\>\=", "\~\/\=]","..."]
