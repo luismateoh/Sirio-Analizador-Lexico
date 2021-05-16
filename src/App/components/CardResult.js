@@ -5,7 +5,6 @@ import {
     FlexboxGrid
 } from 'rsuite';
 
-
 function CardResult({tokens, onSelect, activeKey, ...props}) {
     //css
     const panelStyle = {

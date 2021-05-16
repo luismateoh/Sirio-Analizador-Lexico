@@ -54,10 +54,11 @@ function FormSirio({onSelect, activeKey, ...props}) {
                             value={textArea}
                             setValue={setTextArea}
                             width='100%'
-                            height='45vh'
+                            height='40vh'
                             language='dart'
                             inlineNumbers
                             borderRadius="8px"
+                            tabSize={5}
                         />
 
                     </FormGroup>
