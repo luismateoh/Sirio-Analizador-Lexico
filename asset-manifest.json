@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/sirio/static/js/main.21f2ab1f.chunk.js",
-    "main.js.map": "/sirio/static/js/main.21f2ab1f.chunk.js.map",
+    "main.js": "/sirio/static/js/main.be06ea9e.chunk.js",
+    "main.js.map": "/sirio/static/js/main.be06ea9e.chunk.js.map",
     "runtime-main.js": "/sirio/static/js/runtime-main.9a1b43c1.js",
     "runtime-main.js.map": "/sirio/static/js/runtime-main.9a1b43c1.js.map",
     "static/css/2.32458aaf.chunk.css": "/sirio/static/css/2.32458aaf.chunk.css",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.9a1b43c1.js",
     "static/css/2.32458aaf.chunk.css",
     "static/js/2.188f1948.chunk.js",
-    "static/js/main.21f2ab1f.chunk.js"
+    "static/js/main.be06ea9e.chunk.js"
   ]
 }
