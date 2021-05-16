@@ -1,6 +1,6 @@
 # Sirio · Analizador Léxico
 
-Sirio pretende ser un analizador léxico el cual mediante expresiones regulares y autómatas finitos lee alguna una entrada (código fuente de un programa)  y genera una lista ligada o array de tokens. Estos tokens se componen de la siguiente manera: cada uno de ellos posee un atributo que identifica el tipo del token, y el Lexema o valor del token.
+Sirio pretende ser un analizador léxico el cual mediante expresiones regulares y autómatas finitos lee alguna una entrada (código fuente de un programa)  y genera una lista ligada o array de tokens. Estos tokens se componen de la siguiente manera: un atributo que identifica el tipo del token y el lexema o valor del token.
 
 :blue_book: [Documento sobre el proceso del analixis lexico que realiza sirio](https://www.notion.so/luismateoh/Sirio-Analizador-L-xico-14498473d3b24697b760bec59667e772)
 
