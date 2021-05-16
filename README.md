@@ -18,5 +18,6 @@ Podrá reconocer los siguientes categorias léxicas:
 
 Para acceder a sirio siga:
 [https://luismateoh.github.io/sirio/](https://luismateoh.github.io/sirio/)
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/448038bd-fd6f-4498-91ab-ed9588693a58/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/448038bd-fd6f-4498-91ab-ed9588693a58/Untitled.png)
+
+![Imgur](https://i.imgur.com/vShpfAX.png)
 
