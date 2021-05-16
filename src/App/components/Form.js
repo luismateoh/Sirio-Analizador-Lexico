@@ -15,13 +15,14 @@ import {
 
 const panelStyle = {
     /* Extra small devices (phones, 600px and down) */
-    width:"60rem"
+    width: "60rem"
 }
 
 
 function FormSirio({onSelect, activeKey, ...props}) {
     const [card, setCard] = useState();
     const [textArea, setTextArea] = useState("void main() {\n  print('Hello, World!');\n}");
+
     function showCard() {
         if (0 !== textArea.trim().localeCompare("")) {
             let tokens = []
@@ -44,7 +45,7 @@ function FormSirio({onSelect, activeKey, ...props}) {
 
     return (
         <div>
-            <Panel header="Analizador lexico" bordered style={panelStyle}>
+            <Panel header="Analizador léxico" bordered style={panelStyle}>
                 <p/>
                 <Form fluid>
                     <FormGroup>

@@ -8,12 +8,12 @@ import Header from "../components/Header"
 import Form from "../components/Form"
 
 
-function Home({ onSelect, activeKey, ...props }) {
+function Home({onSelect, activeKey, ...props}) {
 
     const containerStyle = {
         height: "100%",
         maxWidth: "100%",
-        display:   "flex",
+        display: "flex",
         alignItems: "center",
         justifyContent: "center",
         padding: "5%"
@@ -22,7 +22,7 @@ function Home({ onSelect, activeKey, ...props }) {
     return (
 
         <Container>
-            <Header />
+            <Header/>
             <Content style={containerStyle}>
                 <Col>
                     <Row>
