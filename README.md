@@ -24,7 +24,7 @@ Para acceder a sirio siga:
 ![Imgur](https://i.imgur.com/vShpfAX.png)
 
 Realizar los siguientes pasos para ejecutar Sirio.
-Recordar que antes de eso se debe tener instalado *[Node.js](https://nodejs.org/es/) (14.17.0).*
+Recordar que antes de eso se debe tener instalado *[Node.js](https://nodejs.org/es/) (v14.17.0), con [Yarn](https://yarnpkg.com/) (v1.22.10).*
 
 Clonar el repositorio desde: [https://github.com/luismateoh/sirio](https://github.com/luismateoh/sirio)
 
