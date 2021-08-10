@@ -19,14 +19,14 @@ Podrá reconocer las siguientes categorias léxicas:
 6. Separadores
 
 Para acceder a sirio siga:
-[https://luismateoh.github.io/sirio/](https://luismateoh.github.io/sirio/)
+[https://luismateoh.github.io/Sirio-Analizador-Lexico/](https://luismateoh.github.io/Sirio-Analizador-Lexico/)
 
 ![Imgur](https://i.imgur.com/vShpfAX.png)
 
 Realizar los siguientes pasos para ejecutar Sirio.
 Recordar que antes de eso se debe tener instalado *[Node.js](https://nodejs.org/es/) (v14.17.0), con [Yarn](https://yarnpkg.com/) (v1.22.10).*
 
-Clonar el repositorio desde: [https://github.com/luismateoh/sirio](https://github.com/luismateoh/sirio)
+Clonar el repositorio desde: [https://github.com/luismateoh/Sirio-Analizador-Lexico](https://github.com/luismateoh/Sirio-Analizador-Lexico)
 
 ```bash
 git clone https://github.com/luismateoh/sirio

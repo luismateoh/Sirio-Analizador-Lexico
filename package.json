@@ -1,5 +1,5 @@
 {
-  "homepage": "http://luismateoh.github.io/sirio",
+  "homepage": "https://luismateoh.github.io/Sirio-Analizador-Lexico",
   "name": "sirio",
   "version": "0.1.0",
   "private": false,
@@ -44,7 +44,7 @@
     "gh-pages": "^3.1.0"
   },
   "main": "index.js",
-  "repository": "https://github.com/luismateoh/sirio.git",
+  "repository": "https://github.com/luismateoh/Sirio-Analizador-Lexico.git",
   "author": "luismateoh <lmateo.hincapie@udea.edu.co>",
   "license": "MIT"
 }
