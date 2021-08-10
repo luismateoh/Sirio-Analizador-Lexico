@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/sirio/static/js/main.28e8104e.chunk.js",
-    "main.js.map": "/sirio/static/js/main.28e8104e.chunk.js.map",
-    "runtime-main.js": "/sirio/static/js/runtime-main.9a1b43c1.js",
-    "runtime-main.js.map": "/sirio/static/js/runtime-main.9a1b43c1.js.map",
-    "static/css/2.32458aaf.chunk.css": "/sirio/static/css/2.32458aaf.chunk.css",
-    "static/js/2.106f80d9.chunk.js": "/sirio/static/js/2.106f80d9.chunk.js",
-    "static/js/2.106f80d9.chunk.js.map": "/sirio/static/js/2.106f80d9.chunk.js.map",
-    "index.html": "/sirio/index.html",
-    "static/css/2.32458aaf.chunk.css.map": "/sirio/static/css/2.32458aaf.chunk.css.map",
-    "static/js/2.106f80d9.chunk.js.LICENSE.txt": "/sirio/static/js/2.106f80d9.chunk.js.LICENSE.txt"
+    "main.js": "/Sirio-Analizador-Lexico/static/js/main.28e8104e.chunk.js",
+    "main.js.map": "/Sirio-Analizador-Lexico/static/js/main.28e8104e.chunk.js.map",
+    "runtime-main.js": "/Sirio-Analizador-Lexico/static/js/runtime-main.309c92bd.js",
+    "runtime-main.js.map": "/Sirio-Analizador-Lexico/static/js/runtime-main.309c92bd.js.map",
+    "static/css/2.32458aaf.chunk.css": "/Sirio-Analizador-Lexico/static/css/2.32458aaf.chunk.css",
+    "static/js/2.0af63ddc.chunk.js": "/Sirio-Analizador-Lexico/static/js/2.0af63ddc.chunk.js",
+    "static/js/2.0af63ddc.chunk.js.map": "/Sirio-Analizador-Lexico/static/js/2.0af63ddc.chunk.js.map",
+    "index.html": "/Sirio-Analizador-Lexico/index.html",
+    "static/css/2.32458aaf.chunk.css.map": "/Sirio-Analizador-Lexico/static/css/2.32458aaf.chunk.css.map",
+    "static/js/2.0af63ddc.chunk.js.LICENSE.txt": "/Sirio-Analizador-Lexico/static/js/2.0af63ddc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9a1b43c1.js",
+    "static/js/runtime-main.309c92bd.js",
     "static/css/2.32458aaf.chunk.css",
-    "static/js/2.106f80d9.chunk.js",
+    "static/js/2.0af63ddc.chunk.js",
     "static/js/main.28e8104e.chunk.js"
   ]
 }
